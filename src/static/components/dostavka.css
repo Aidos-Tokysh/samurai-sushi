@@ -1,0 +1,64 @@
+.card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+    height: 400px;
+    margin-right: 20px;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 0 5px 5px rgb(215, 215, 215);
+    box-sizing: border-box;
+    transition: 2s;
+    cursor: pointer;
+    backface-visibility: hidden;
+    opacity: 0;
+    animation: rotation .4s ease-in-out forwards;
+}
+
+
+
+@keyframes rotation {
+    0% {
+      opacity: 0;
+      transform: rotateX(90deg);
+      
+
+    }   
+    100%{
+        opacity: 1;
+        transform: rotateX(0deg);
+
+    }
+
+  }
+
+.deliveryList{
+    display: flex;
+    width: 65%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    z-index: -1;
+}
+.card_actions{
+    display: flex;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+.card_actions button{
+    cursor: pointer;
+}
+.card_actions input{
+    display: flex;
+    text-align: center;
+    width: 50px;
+    cursor: pointer;
+}
+
+
